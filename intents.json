@@ -1,6 +1,5 @@
 {
-  "intents": 
-  [
+  "intents": [
     {
       "tag": "greetings",
       "patterns": [
@@ -8,14 +7,16 @@
         "hey",
         "hi",
         "good day",
+        "Good morning",
+        "Good evening",
         "Greetings",
         "what's up?",
-        "how is it going?"
+        "how is it going?",
+        "hi there",
+        "hello there"
       ],
       "responses": [
-        "Hello!",
-        "Hey!",
-        "What can I do for you?"
+        "Good Day to you, How can I do for you?"
       ]
     },
     {
@@ -25,7 +26,9 @@
         "name",
         "what's your name",
         "who are you",
-        "what should I call you"
+        "what should I call you",
+        "who are you?",
+        "tell me your name"
       ],
       "responses": [
         "You can call me ChatBotFOEUOJ",
@@ -37,7 +40,13 @@
       "tag": "courseDuration",
       "patterns": [
         "how long is the engineering degree",
-        "how long will it take to complete the engineering degree"
+        "how long will it take to complete the engineering degree",
+        "duration of the engineering degree",
+        "time required for an engineering degree",
+        "what is the length of the engineering program",
+        "how much time does it take to finish an engineering degree",
+        "engineering degree duration",
+        "time commitment for completing engineering studies"
       ],
       "responses": [
         "The FOE UOJ offers a 4 year long engineering degree"
@@ -48,7 +57,10 @@
       "tag": "program structure",
       "patterns": [
         "What program will students follow?",
-        "Tell me about the structure of the academic program."
+        "Tell me about the structure of the academic program.",
+        "Explain the academic program structure.",
+        "Program format for students",
+        "Academic curriculum details"
       ],
       "responses": [
         "Students will follow the General Program during the first three semesters and the Special Program in the last five semesters."
@@ -58,7 +70,10 @@
       "tag": "industrial training",
       "patterns": [
         "Is there any industrial training requirement?",
-        "Tell me about the industrial training for students."
+        "Tell me about the industrial training for students.",
+        "Industrial exposure in the program",
+        "Internship information",
+        "How is industrial training organized?"
       ],
       "responses": [
         "Each student must complete Industrial Training of 24 weeks at the end of the 7th semester."
@@ -68,7 +83,10 @@
       "tag": "medium",
       "patterns": [
         "In what language are the lectures conducted?",
-        "What is the medium of instruction?"
+        "What is the medium of instruction?",
+        "Language of teaching",
+        "Teaching medium",
+        "Instruction language"
       ],
       "responses": [
         "The medium of instruction is English."
@@ -79,7 +97,9 @@
       "patterns": [
         "How many credits are offered in one semester",
         "Number of credit per semester",
-        "How many credits can I register for in one semester"
+        "How many credits can I register for in one semester",
+        "Credit hours in a semester",
+        "Maximum credits per semester"
       ],
       "responses": [
 			"Each student is offered a maximum of 24 credits to register for each semester"
@@ -89,7 +109,10 @@
       "tag": "exceptions to credit limit",
       "patterns": [
         "Are there any exceptions to the maximum credit limit?",
-        "How can a student exceed the credit limit?"
+        "How can a student exceed the credit limit?",
+        "Exceptional cases for credit limit",
+        "Credit limit exceptions",
+        "Can I take more credits in specific cases?"
       ],
       "responses": [
         "Under exceptional circumstances, deviations to these limits may be permitted by the Dean, with the consent of the heads of the departments. This is subject to the approval of the Faculty Board."
@@ -99,7 +122,10 @@
       "tag": "total academic credits",
       "patterns": [
         "What are the total academic credits for the degree program?",
-        "Tell me about the overall academic credit requirements."
+        "Tell me about the overall academic credit requirements.",
+        "Total credits needed for graduation",
+        "Academic credit sum for the program",
+        "Degree credit requirements"
       ],
       "responses": [
         "During the entire degree program, a student is required to earn 153 academic credits, including 6 from Industrial Training."
@@ -108,8 +134,11 @@
     {
       "tag": "academic credits for non technical electives",
       "patterns": [
-        "Tell me about the breakdown of academic credits for non technical electives.",
-        "What is the credit requirements for non technical electives?"
+        "Tell me about the breakdown of academic credits for non-technical electives.",
+        "What is the credit requirements for non-technical electives?",
+        "Academic credits distribution for non-technical electives",
+        "Credit allocation for elective courses",
+        "Non-technical elective credit details"
       ],
       "responses": [
         "The total number of earned academic credits for non technical electives should include a minimum of 15 academic credits for studies in management, engineering economics, and communication, and 5 academic credits in humanities, social sciences, and engineering ethics."
@@ -119,7 +148,10 @@
       "tag": "academic credits breakdown",
       "patterns": [
         "What are the specific requirements for academic credits?",
-        "Tell me about the breakdown of academic credits."
+        "Tell me about the breakdown of academic credits.",
+        "Credit distribution details",
+        "Academic credits allocation",
+        "Breakdown of credits for the degree"
       ],
       "responses": [
         "The total number of earned academic credits should include a minimum of 15 academic credits for studies in management, engineering economics, and communication, and 5 academic credits in humanities, social sciences, and engineering ethics."
@@ -129,7 +161,10 @@
       "tag": "engineering_curriculum",
       "patterns": [
         "Tell me about the engineering curriculum at the Faculty of Engineering, University of Jaffna.",
-        "What is the structure of the engineering program?"
+        "What is the structure of the engineering program?",
+        "Engineering course details",
+        "Program curriculum explanation",
+        "Curriculum specifics for engineering"
       ],
       "responses": [
         "Students enrolled in the Faculty of Engineering follow a unique curriculum. In the first three semesters, they focus on Common Courses in Engineering Fundamentals with basic designs, offering a special emphasis on day-to-day utilities and their designs. This approach provides an in-depth understanding and an easy learning path as students work with basic designs from familiar entities.",
@@ -140,20 +175,25 @@
       "tag": "general program courses",
       "patterns": [
         "Tell me about the General Program.",
-        "What are the academic credit requirements for the General Program?"
+        "What are the academic credit requirements for the General Program?",
+        "General Program details",
+        "Academic credits in General Program",
+        "Requirements for General Program"
       ],
       "responses": [
-        "In the General Program, there are compulsory core course units totaling 54 academic credits.",
-        "Additionally, the Soft-skill Development Program in the General Program amounts to 3 academic credits."
+        "In the General Program, there are compulsory core course units totaling 54 academic credits."
       ]
     },
     {
       "tag": "soft-skill development program",
       "patterns": [
-        "Tell me about the soft-skill development Program."
+        "Tell me about the soft-skill development Program.",
+        "Soft-skill development details",
+        "What is the Soft-skill Development Program about?",
+        "Details on Soft-skill development",
+        "Soft-skill development in the program"
       ],
       "responses": [
-        "In the General Program, there are compulsory core course units totaling 54 academic credits.",
         "Additionally, the Soft-skill Development Program in the General Program amounts to 3 academic credits."
       ]
     },
@@ -161,7 +201,10 @@
       "tag": "special program courses",
       "patterns": [
         "Tell me about the Special Program.",
-        "What are the academic credit requirements for the Special Program?"
+        "What are the academic credit requirements for the Special Program?",
+        "Special Program details",
+        "Academic credits in Special Program",
+        "Requirements for Special Program"
       ],
       "responses": [
         "The Special Program spans five semesters, from the 4th semester to the 8th semester.",
@@ -172,7 +215,11 @@
     {
       "tag": "teaching method",
       "patterns": [
-        "What teaching and assessment methods are used at the Faculty?"
+        "What teaching and assessment methods are used at the Faculty?",
+        "Teaching approach at the Faculty",
+        "Methods of teaching and assessment",
+        "Educational practices in the Faculty",
+        "Teaching and assessment techniques"
       ],
       "responses": [
         "The Faculty employs outcomes-based education (OBE) methods. Teaching aligns with intended learning outcomes (ILOs), and assessments verify students' competency in achieving these outcomes."
@@ -182,7 +229,10 @@
       "tag": "teaching_panel",
       "patterns": [
         "Tell me about the composition of the teaching panel.",
-        "Who is part of the teaching panel?"
+        "Who is part of the teaching panel?",
+        "Teaching panel details",
+        "Faculty teaching staff information",
+        "Composition of teaching panel"
       ],
       "responses": [
         "The teaching panel consists of a course coordinator, lecturer(s), and a moderator."
@@ -192,7 +242,10 @@
       "tag": "teaching panel roles",
       "patterns": [
         "What are the roles of the teaching panel members?",
-        "Tell me about the responsibilities of the teaching panel."
+        "Tell me about the responsibilities of the teaching panel.",
+        "Duties of teaching panel members",
+        "Responsibilities of teaching staff",
+        "Roles in the teaching panel"
       ],
       "responses": [
         "Lecturer(s) engages in both teaching and assessment of the particular course unit.",
@@ -204,7 +257,10 @@
       "tag": "student assessment",
       "patterns": [
         "How are students assessed in each course unit?",
-        "Tell me about the assessment methods for students."
+        "Tell me about the assessment methods for students.",
+        "Student evaluation process",
+        "Assessment techniques for students",
+        "Course unit evaluation for students"
       ],
       "responses": [
         "The performance of students in each course unit is assessed through formative (in-course) assessments and evaluated by summative (end of course) assessments."
@@ -214,7 +270,10 @@
       "tag": "in-course assessment",
       "patterns": [
         "What are the requirements for the in-course assessment",
-        "Tell me about the in-course assessment for students."
+        "Tell me about the in-course assessment for students.",
+        "In-course assessment details",
+        "Student assessment during the course",
+        "Requirements for course unit assessment"
       ],
       "responses": [
         "Incourse assessment includes Assignment, Quiz, Student Presentation, Oral Examination, Lab/Field Reports, and Mid Semester Examination.",
@@ -225,7 +284,10 @@
       "tag": "end of course assessment",
       "patterns": [
         "What are the requirements for the end of course assessment",
-        "Tell me about the end of course assessment for students."
+        "Tell me about the end of course assessment for students.",
+        "End of course assessment details",
+        "Student evaluation at the end of the course",
+        "Requirements for course unit completion"
       ],
       "responses": [
         "End of course assessment includes only the End semester marks. The pass criteria for end semester assessment is to ensure that your end semester marks is greater than 35%."
@@ -234,9 +296,11 @@
     {
       "tag": "end exam schedule",
       "patterns": [
-        "What is date and time of end exam?",
+        "What is the date and time of end exam?",
         "What is the schedule of the end exam?",
-        "Tell me about the scheduling of end exams."
+        "Tell me about the scheduling of end exams.",
+        "Exam date and time details",
+        "End exam schedule information"
       ],
       "responses": [
         "The date and time of the end exams are decided by the Office of the Dean at the beginning of each semester. They will be sent to you via Outlook 3-4 weeks before the exam."
@@ -246,7 +310,10 @@
       "tag": "industrial training supervision",
       "patterns": [
         "Who supervises the Industrial Training?",
-        "Tell me about the supervision of Industrial Training."
+        "Tell me about the supervision of Industrial Training.",
+        "Industrial Training supervision details",
+        "Supervision of Industrial Training",
+        "Who oversees the Industrial Training?"
       ],
       "responses": [
         "Industrial Training will be supervised by the National Apprentice and Industrial Training Authority (NAITA)."
@@ -256,7 +323,10 @@
       "tag": "attendance requirements",
       "patterns": [
         "What are the attendance requirements for earning a grade?",
-        "Tell me about the minimum attendance level for exam eligibility."
+        "Tell me about the minimum attendance level for exam eligibility.",
+        "Grade eligibility based on attendance",
+        "Attendance requirements for exam eligibility",
+        "Minimum attendance for grade"
       ],
       "responses": [
         "Each student is required to have a minimum attendance level of 80% in a course unit to be eligible to earn a grade."
@@ -266,7 +336,10 @@
       "tag": "attendance failure",
       "patterns": [
         "What happens if a student fails to meet attendance requirements?",
-        "Tell me about the consequences for insufficient attendance."
+        "Tell me about the consequences for insufficient attendance.",
+        "Consequences of failing attendance requirements",
+        "Results of not meeting attendance criteria",
+        "Attendance failure consequences"
       ],
       "responses": [
         "If a student fails to satisfy attendance requirements in a course unit, they will not be allowed to appear for the End examination, and the student shall be assigned a Grade of 'E'."
@@ -276,7 +349,10 @@
       "tag": "absence",
       "patterns": [
         "What should I do if I was absent for an in-class activity?",
-        "What is the procedure I should follow if I missed an in-class activity."
+        "What is the procedure I should follow if I missed an in-class activity.",
+        "Protocol for missed in-class activity",
+        "Absenteeism procedure for in-class activity",
+        "Missed in-class activity process"
       ],
       "responses": [
         "If a student is absent for an in-class activity, assessment, or evaluation, they should inform the Office of the Dean within one week from the date of absence. Supporting documents should be submitted within two weeks."
@@ -286,7 +362,10 @@
       "tag": "attendance reattempt",
       "patterns": [
         "Do I need to attend lectures if I already satisfied the 80% attendance requirement in my first attempt?",
-        "For my reattempt, should I attend lectures?"
+        "For my reattempt, should I attend lectures?",
+        "Lecture attendance for reattempt",
+        "Attending lectures in case of reattempt",
+        "Attendance requirement for reattempt"
       ],
       "responses": [
         "Student who satisfies 80% attendance requirement of a course unit may carry forward the students attendance record when the student reattempts."
@@ -295,7 +374,11 @@
     {
       "tag": "display results",
       "patterns": [
-        "When will the results be displayed?"
+        "When will the results be displayed?",
+        "Results display date",
+        "Result publication time",
+        "Displaying semester results",
+        "When can I see my grades?"
       ],
       "responses": [
         "The semester results will be available for display once they are appoved by the results board. This usually takes 3-4 weeks following the end examination."
@@ -305,7 +388,10 @@
       "tag": "GPA and honors",
       "patterns": [
         "How are GPA and Class of Honors decided?",
-        "Tell me about the process of determining GPA and Class of Honors."
+        "Tell me about the process of determining GPA and Class of Honors.",
+        "GPA and honors calculation",
+        "Deciding GPA and Class of Honors",
+        "Process for GPA and honors determination"
       ],
       "responses": [
         "At the end of the eighth semester, the Examination Branch of the university shall decide the GPA and the Class of Honors for students who have fulfilled the requirements for the degree program in that academic year. The results are then forwarded to the Senate for confirmation."
@@ -315,7 +401,10 @@
       "tag": "academic advisors",
       "patterns": [
         "How do I find out who my Academic advisor is?",
-        "Who is my academic advisor?"
+        "Who is my academic advisor?",
+        "Academic advisor details",
+        "Finding academic advisor",
+        "How to locate my academic advisor"
       ],
       "responses": [
         "At the beginning of each academic year, Academic Advisers are appointed from among the members of the academic staff of the Faculty. The AR office will circulate a document containing the details of the academic advisors for each student. Academic advisors may change after each semester."
@@ -325,7 +414,10 @@
       "tag": "Results D",
       "patterns": [
         "I got a D results for one of my subjects. What does it mean?",
-        "What does a D mean in my results"
+        "What does a D mean in my results",
+        "Understanding D grade in results",
+        "Interpreting D grade",
+        "Meaning of D in results"
       ],
       "responses": [
         "The results D refers to marks percetnage in between 35-39% which means you have not satisfied the criteria to obtain a pass. Consult the respective coordinator or lecturer for more details."
@@ -334,8 +426,11 @@
     {
       "tag": "GPA",
       "patterns": [
-        "what is meant by GPA?",
-        "what is GPA"
+        "What is meant by GPA?",
+        "What is GPA",
+        "Understanding GPA",
+        "GPA explanation",
+        "Definition of GPA"
       ],
       "responses": [
         "GPA stands for graded point average. The Grade Point Average (GPA) is the weighted average of the GPV secured by the student in the course units that are valid for calculating the GPA."
@@ -345,7 +440,10 @@
       "tag": "GPA invalid subjects",
       "patterns": [
         "What are the subjects that are not considered when calculating GPA?",
-        "which subjects do not qualify for GPA calculation?"
+        "Which subjects do not qualify for GPA calculation?",
+        "Excluded subjects from GPA calculation",
+        "GPA calculation exclusion subjects",
+        "Subjects not counted in GPA"
       ],
       "responses": [
         "All course units excluding Industrial training (6 credits) will be considered. The remaining 147 credits will be considered in the GPA calculation."
@@ -355,7 +453,10 @@
       "tag": "GPA rounding",
       "patterns": [
         "How is the GPA rounded off?",
-        "To what decimal places is the GPA calculated?"
+        "To what decimal places is the GPA calculated?",
+        "Rounding off GPA details",
+        "Decimal places in GPA calculation",
+        "GPA rounding procedure"
       ],
       "responses": [
         "The GPA is rounded up to the nearest 0.05. A student having a GPA of 3.651 will be rounded to 3.70 however a student with a GPA of 3.650 will be rounded to 3.60."
@@ -366,7 +467,9 @@
       "patterns": [
         "What are the criteria for transitioning from the General Program to the Special Program?",
         "Tell me about the requirements to move from the General Program to the Special Program.",
-        "How does a student progress from the General Program to the Special Program?"
+        "How does a student progress from the General Program to the Special Program?",
+        "Transitioning from General to Special Program",
+        "General to Special Program progression"
       ],
       "responses": [
         "To proceed from the General Program to the Special Program, a student should obtain grades 'C' or above in course units, aggregating to at least 42 academic credits out of 54 offered during the General Program. The student should  also obtain grade `C' or above in English Language Enhancement course unit."
@@ -376,8 +479,10 @@
       "tag": "grade improvement",
       "patterns": [
         "Can a student with a grade below 'C' re-attempt assessments for a course unit?",
-        "Tell me how I can improvie my grade which is below 'C'.",
-        "What options does a student have to enhance a grade below 'C'?"
+        "Tell me how I can improve my grade which is below 'C'.",
+        "What options does a student have to enhance a grade below 'C'?",
+        "Improving grades below 'C'",
+        "Re-attempting assessments for low grades"
       ],
       "responses": [
         "A student may re-attempt the required assessment/evaluation to improve the grade. Consult the respective lecturer or coordinator for more details regarding your grade."
@@ -387,7 +492,10 @@
       "tag": "course completion timeframe",
       "patterns": [
         "What is the time limit for completing a course unit on re-attempt?",
-        "How long does a student have to complete a re-attempted course unit for graduation?"
+        "How long does a student have to complete a re-attempted course unit for graduation?",
+        "Timeframe for re-attempted course completion",
+        "Completing re-attempted course within time limit",
+        "Graduation time limit for re-attempted course"
       ],
       "responses": [
         "A student who re-attempts a particular course unit must complete it within eight academic years since the student registered for the degree program to be eligible for graduation."
@@ -463,7 +571,11 @@
       "tag": "add and drop",
       "patterns": [
         "Can students add or drop course modules?",
-        "What is the procedure for adding or dropping modules?"
+        "What is the procedure for adding or dropping modules?",
+        "How to withdraw from a course?",
+        "Course withdrawal process",
+        "Withdrawing from a subject",
+        "Procedure for dropping a course"
       ],
       "responses": [
         "A student is allowed to ADD or DROP course modules within the first two weeks from the fifth semester onwards. Students need to download the ADD and DROP form from the faculty website and fill in the necessary details and obtain the respective advisor's signature and submit it to the AR office before the deadline."
@@ -499,6 +611,71 @@
         "With excellent education facilities, FOE UOJ provides various other facilities like 24 hours internet, library, discusson room, canteen, and student service for any students queries."
       ]
     },
+    {
+      "tag": "letterToDean",
+      "patterns": [
+        "procedure to write a letter to the Dean",
+        "steps for writing a letter to the Dean",
+        "how to contact the Dean",
+        "How can I draft a letter to the Dean?",
+        "What are the steps for writing a letter to the Dean?",
+        "Contacting the Dean: What's the process?"
+      ],
+      "responses": [
+      "To write a letter to the Dean, follow the procedure by creating a draft and submitting it to your academic advisor. Upon approval, your advisor will sign and send it to the assistant registrar's office. You'll receive the Dean's response via Outlook within a week."
+      ]
+    },
+    {
+      "tag": "medical_submission",
+      "patterns": [
+        "How do I submit medical?",
+        "Medical submission process",
+        "Procedure for medical submission",
+        "What is the process for submitting medical documents?",
+        "Medical submission guidelines"
+      ],
+      "responses": [
+        "If the student has notified the Assistant Registrar's office within two weeks, he/she must submit a medical submission form along with the approved medical documents. Note that only medicals from state hospitals will be accepted. In order to obtain approval, the medicals must also be approved by the University Medical Officer who is available after 5 pm at the faculty."
+      ]
+    },
+    {
+      "tag": "degree_certificate_subjects",
+      "patterns": [
+        "Do all the subjects I register for appear in my degree certificate?",
+        "Subjects on degree certificate",
+        "Which subjects will be listed on my degree certificate?",
+        "Claimed subjects on degree certificate",
+        "How are subjects selected for the degree certificate?"
+      ],
+      "responses": [
+        "As of 2023, to the best of my knowledge, only the subjects that the student claims will appear on the degree certificate. The student must satisfy the minimum credit requirement of 153, and additionally, subjects can be claimed in the degree certificate."
+      ]
+    },
+    {
+      "tag": "transcript_request",
+      "patterns": [
+        "How to request a transcript?",
+        "Transcript request process",
+        "Requesting academic transcript",
+        "Transcript application"
+      ],
+      "responses": [
+        "To request a transcript, fill out the Transcript Request Form available at the Assistant Registrar's office or on the official website. Submit the completed form along with any required fees to the AR office."
+      ]
+    },
+    {
+      "tag": "lost record book",
+      "patterns": [
+        "Lost student record book",
+        "Replacing a lost record book",
+        "How to get a new student record book?",
+        "Procedure for lost record book replacement"
+      ],
+      "responses": [
+        "To replace a lost student record book, report the loss to the AR office immediately. Obtain a confirmation letter from the AR stating that you are student presently studying at the university. Submit the letter and register a formal complaint at the nearest police station and obtain a copy of the complaint letter. Submit this complaint letter, a passport sized photo and a receipt for the new record book to the AR office."
+      ]
+    },
+
     {
       "tag": "goodbye",
       "patterns": [
@@ -542,8 +719,10 @@
         "Happy to help!",
         "Any time!",
         "My pleasure"
-		  ]
-    },
+		
+		
+		
+	]},
 	  {
       "tag": "Contact",
       "patterns": [
@@ -555,7 +734,8 @@
       ],
       "responses": [
         "You can call us at +94-021-2062161 or mail us at admin@eng.jfn.ac.lk"
-	    ]
+	  ]
+		
     }
   ]
 }

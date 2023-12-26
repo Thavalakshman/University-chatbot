@@ -20,11 +20,11 @@ class ChatbotApp:
         self.master = master
         master.title("Chatbot Interface")
 
-        self.chatbox = scrolledtext.ScrolledText(master, wrap=tk.WORD, width=40, height=10)
-        self.chatbox.pack(padx=10, pady=10)
+        self.chatbox = scrolledtext.ScrolledText(master, wrap=tk.WORD, width=100, height=20)
+        self.chatbox.pack(padx=100, pady=100)
 
-        self.user_input = tk.Entry(master, width=30)
-        self.user_input.pack(pady=10)
+        self.user_input = tk.Entry(master, width=150)
+        self.user_input.pack(pady=50)
 
         self.send_button = tk.Button(master, text="Send", command=self.send_message)
         self.send_button.pack()
@@ -44,14 +44,14 @@ class ChatbotApp:
         # Use your existing chatbot functions to get a response
         bot_response = self.get_bot_response(user_message)
 
-        self.display_message(f"Chatbot: {bot_response}")
+        self.display_message(f"Chatbot: {bot_response}\n")
         self.user_input.delete(0, tk.END)
 
     def get_bot_response(self, user_message):
         # Use your existing predict_class and get_response functions here
         bow = self.bag_of_words(user_message)
         res = model.predict(np.array([bow]))[0]
-        error_threshold = 0.25
+        error_threshold = 0.24
         results = [[i, r] for i, r in enumerate(res) if r > error_threshold]
         results.sort(key=lambda x: x[1], reverse=True)
 
@@ -65,6 +65,9 @@ class ChatbotApp:
                     result = random.choice(i['responses'])
                     return result
         return "I'm sorry, I don't understand."
+
+
+
 
     def bag_of_words(self, sentence):
         sentence_words = nltk.word_tokenize(sentence)
