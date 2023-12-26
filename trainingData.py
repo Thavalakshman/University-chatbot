@@ -65,7 +65,19 @@ model.add(Dense(len(train_y[0]), activation='softmax'))
 
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-hist = model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
+hist = model.fit(train_x, train_y, epochs=250, batch_size=5, verbose=1)
+
+batch_size = 32  # Choose an appropriate batch size
+batches = [training[i:i + batch_size] for i in range(0, len(training), batch_size)]
+
+for batch in batches:
+    batch = np.array(batch)
+    train_x_batch = batch[:, :len(words)]
+    train_y_batch = batch[:, len(words):]
+
+    model.train_on_batch(train_x_batch, train_y_batch)
+
+
 model.save('chatbotmodel.h5', hist)
 
 print('Done')
